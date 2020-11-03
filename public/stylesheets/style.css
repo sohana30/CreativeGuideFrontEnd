@@ -1,8 +1,29 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+	font-family: 'Mandali', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1{
+	font-family: 'Mandali', sans-serif;
+
+}
+
+.container {
+	background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+
+}
+
+#mainNav ul {
+	list-style-type: none;
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+
+#mainNav ul li {
+	display: inline;
+	margin-right: 15px;
+}
+
+.wow {
+	visibility: hidden;
 }
