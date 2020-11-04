@@ -27,11 +27,7 @@
 
 
 
-<!-- Card -->
 
- 
-  
-  <!-- Content -->
   <div class=" black-text card d-flex align-items-center  py-2 px-2">
     <div class="rgba-white-strong pt-3 pb-3 pl-3 pr-3" style="border-radius:25px;">
       <div class="rgba-white-strong pt-3 pb-3 pl-3 pr-3" style="border-radius:25px;">
@@ -56,16 +52,17 @@
       </div>
           
     </div>
+    <% landscapes.album.forEach(function(landscape){ %>
     <h1 class="mt-2  display-1 align-items-center text-center"></h1>
-  <% landscapes.album.forEach(function(landscape){ %>
+  
 
     
       <div class="container d-flex p-1"></div>
     <!-- Card -->
     <div class="container">
     <div class="row ">
-    <div class="p-3"></div>
-      
+    <div class="p-3">
+      <div class="col">
       <div class="card p-1 col-sm-5 ">
       
         <img class="card-img-top rounded" src="<%= landscape.img %>" alt="Card image cap">
@@ -83,16 +80,21 @@
             <div class="col-8">
               <p class="card-text text-right"><%= landscape.date %> </p>
             </div>
-          </div>
+        </div>
         </div>
       </div>
+      </div>
+      </div>
+        
+      
     <br>
   
      <%});%>
    
+   
     
-  
   </div>
+
 </div>
   
     
