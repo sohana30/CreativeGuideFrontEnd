@@ -1,11 +1,129 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="description" content="content description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+  <!-- CSS -->
+<link href="https://fonts.googleapis.com/css?family=Julee|Mandali&display=swap" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--Content -->
+  <h1 class="mt-3  display-1 align-items-center text-center"></h1>
+        
+
+  <div class="container wow fadeIn">
+
+
+
+<!-- Card -->
+
+ 
+  
+  <!-- Content -->
+  <div class=" black-text card d-flex align-items-center  py-2 px-2">
+    <div class="rgba-white-strong pt-3 pb-3 pl-3 pr-3" style="border-radius:25px;">
+      <div class="rgba-white-strong pt-3 pb-3 pl-3 pr-3" style="border-radius:25px;">
+        <div class="row">
+        <div class="col-sm-3 picture">
+          <img class="rounded-circle img-thumbnail" src="<%= landscapes.profile_picture %>">
+        </div>
+       <div class="col">
+      <h1 class="pt-2 name"><strong><%= landscapes.name %></strong></h1>
+      <strong > <h6 class="text-dark bio">Bio</h6></strong>
+      <h6 class="text-muted bio">
+            <%= landscapes.bio %> 
+          </h6>
+       </div>
+          <div class="col-3">
+            <h5 class=" text-muted " >Phone</h5> <h5 class=" text-danger"><%= landscapes.phone %></h5>
+            <h5 class="text-muted ">Email</h5 ><h5 class="text-danger "><%= landscapes.email %></h5>
+          </div>
+          </div>
+       
+        </div>
+      </div>
+          
+    </div>
+    <h1 class="mt-2  display-1 align-items-center text-center"></h1>
+  <% landscapes.album.forEach(function(landscape){ %>
+
+    
+      <div class="container d-flex p-1"></div>
+    <!-- Card -->
+    <div class="container">
+    <div class="row ">
+    <div class="p-3"></div>
+      
+      <div class="card p-1 col-sm-5 ">
+      
+        <img class="card-img-top rounded" src="<%= landscape.img %>" alt="Card image cap">
+        <div class="card-img-overlay text-white font-weight-bold"><h4><%= landscape.title %></h4></div>
+        <div class="card-body">
+         
+          
+          <p class="card-text"><%= landscape.description %></p>
+          <div class="row">
+            <div class="col">
+              <%if (landscape.featured == true) { %>
+                <i class="fas fa-heart"></i>
+                <% } %>
+            </div>
+            <div class="col-8">
+              <p class="card-text text-right"><%= landscape.date %> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+  
+     <%});%>
+   
+    
+  
+  </div>
+</div>
+  
+    
+  
+     
+
+
+<!-- Card -->
+
+
+
+
+  <!--End content-->
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
+<!--main javascript-->
+
+<!-- Initializations -->
+<script type="text/javascript">
+   // Animations initialization
+  new WOW().init();
+</script>
+</body>
+
 </html>
