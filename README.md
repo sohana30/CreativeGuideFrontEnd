@@ -1,5 +1,5 @@
 # CreativeGuideFrontEnd
 **install npm packages**
-npm install
+-> npm install
 **start npm**
-npm start
+-> npm start
