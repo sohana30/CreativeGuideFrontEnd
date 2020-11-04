@@ -1,6 +1,6 @@
 body{
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-	font-family: 'Mandali', sans-serif;
+	background-image: linear-gradient(to bottom, #94b8ef, #85cde5, #a4d9d2, #cde0cd, #ebe8dc);
+font-family: 'Mandali', sans-serif;
 }
 
 h1{
@@ -8,10 +8,7 @@ h1{
 
 }
 
-.container {
-	background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
 
-}
 
 #mainNav ul {
 	list-style-type: none;
@@ -27,3 +24,8 @@ h1{
 .wow {
 	visibility: hidden;
 }
+.col-sm-7 picture{
+  max-width:100%;
+    height:auto;
+}
+
